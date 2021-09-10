@@ -6,7 +6,6 @@
 package Solution07;
 
 import java.util.Scanner;
-import java.util.function.DoubleFunction;
 
 public class Solution07 {
     public static void main(String[] args) {
