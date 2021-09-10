@@ -3,6 +3,16 @@
  *  Copyright 2021 Thomas Wallsmith
  */
 
+/*
+ *  PSEUDOCODE:
+ *      Read current year
+ *      Ask & read current age of user
+ *      Ask & read desired retirement age of user
+ *      Calculate time between now and retirement
+ *      Calculate retirement year
+ *      Print result
+ */
+
 package Solution;
 
 import java.util.Calendar;

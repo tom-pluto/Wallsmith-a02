@@ -3,6 +3,15 @@
  *  Copyright 2021 Thomas Wallsmith
  */
 
+/*
+ *  PSEUDOCODE
+ *      Ask & read length of room
+ *      Ask & read width of room
+ *      Regurgitate information back to console
+ *      Calculate square feet of room
+ *      Convert square feet to square meters
+ *      Print result
+ */
 package Solution07;
 
 import java.util.Scanner;
