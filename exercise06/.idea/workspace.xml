@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5db76bc0-3485-42ae-bb71-7801d930e067" name="Changes" comment="Completed exercise06." />
+    <list default="true" id="5db76bc0-3485-42ae-bb71-7801d930e067" name="Changes" comment="Completed exercise06.">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,6 +91,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -190,6 +194,8 @@
       <option name="presentableId" value="Default" />
       <updated>1631290105169</updated>
       <workItem from="1631290109647" duration="1650000" />
+      <workItem from="1631298560460" duration="42000" />
+      <workItem from="1631308447776" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="Completed exercise06.">
       <created>1631291594006</created>
@@ -214,6 +220,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed exercise06" />
