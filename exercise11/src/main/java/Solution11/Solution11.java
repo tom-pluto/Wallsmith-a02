@@ -20,12 +20,15 @@ public class Solution11 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("How many euros are you exchanging? ");
-        double euros = sc.nextDouble();
-        System.out.print("What is the exchange rate? ");
-        double rate = sc.nextDouble();
+        double euros = getInput(sc, "How many euros are you exchanging? ");
+        double rate = getInput(sc, "What is the exchange rate? ");
 
         double result = rate*euros;
         System.out.printf("%.2f euros at an exchange rate of %.2f is\n%.2f U.S. dollars.\n", euros, rate, result);
+    }
+
+    private static double getInput(Scanner sc, String s) {
+        System.out.print(s);
+        return sc.nextDouble();
     }
 }

@@ -19,24 +19,35 @@ import java.util.Scanner;
 public class Solution07 {
     public static void main(String[] args) {
 
-        int roomLength;
-        int roomWidth;
-        int resFeet;
-        double resMeter;
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("What is the length of the room in feet? ");
-        roomLength = sc.nextInt();
-        System.out.printf("What is the width of the room in feet? ");
+        int roomLength = getRoomLength(sc);
+        int roomWidth = getRoomWidth(sc);
+        System.out.printf("You entered dimensions of %d feet by %d feet.\n", roomWidth, roomLength);
+        System.out.print("The area is\n");
+
+        int resFeet = roomLength*roomWidth;
+        double resMeter = resFeet*0.09290304;
+
+        printResults(resFeet, resMeter);
+
+    }
+
+    private static int getRoomWidth(Scanner sc) {
+        int roomWidth;
+        System.out.print("What is the width of the room in feet? ");
         roomWidth = sc.nextInt();
-        System.out.printf("You entered dimensions of 15 feet by 20 feet.\n");
-        System.out.printf("The area is%n");
+        return roomWidth;
+    }
 
-        resFeet = roomLength*roomWidth;
-        resMeter = resFeet*0.09290304;
+    private static int getRoomLength(Scanner sc) {
+        int roomLength;
+        System.out.print("What is the length of the room in feet? ");
+        roomLength = sc.nextInt();
+        return roomLength;
+    }
 
+    private static void printResults(int resFeet, double resMeter) {
         System.out.printf("%d square feet\n%.3f square meters", resFeet, resMeter);
-
     }
 }

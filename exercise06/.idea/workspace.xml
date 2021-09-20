@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db76bc0-3485-42ae-bb71-7801d930e067" name="Changes" comment="Completed exercise06.">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Solution/Solution06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Solution/Solution06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise20/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise20/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise22/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise22/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +88,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise07" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -196,6 +199,7 @@
       <workItem from="1631290109647" duration="1650000" />
       <workItem from="1631298560460" duration="42000" />
       <workItem from="1631308447776" duration="687000" />
+      <workItem from="1632102689375" duration="228000" />
     </task>
     <task id="LOCAL-00001" summary="Completed exercise06.">
       <created>1631291594006</created>

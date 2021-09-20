@@ -21,23 +21,26 @@ import java.util.Scanner;
 public class Solution06 {
     public static void main(String[] args) {
 
-        int currentAge;
-        int retireAge;
-        int currentYear;
-        int retireYear;
-        int meantime;
-
-        currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         Scanner scanner = new Scanner(System.in);
 
-        System.out.printf("What is your current age? ");
+        int currentAge = getAge(scanner, "What is your current age? ");
+        int retireAge = getAge(scanner, "At what age would you like to retire? ");
+
+        int meantime = retireAge-currentAge;
+        int retireYear = currentYear+meantime;
+
+        printResults(currentYear, retireYear, meantime);
+    }
+
+    private static int getAge(Scanner scanner, String s) {
+        int currentAge;
+        System.out.print(s);
         currentAge = scanner.nextInt();
-        System.out.printf("At what age would you like to retire? ");
-        retireAge = scanner.nextInt();
+        return currentAge;
+    }
 
-        meantime = retireAge-currentAge;
-        retireYear = currentYear+meantime;
-
+    private static void printResults(int currentYear, int retireYear, int meantime) {
         System.out.printf("You have %d years left until you can retire.%n", meantime);
         System.out.printf("It's %d, so you can retire in %d.%n", currentYear, retireYear);
     }

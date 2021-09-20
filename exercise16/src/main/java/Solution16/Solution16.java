@@ -22,9 +22,18 @@ public class Solution16 {
 
         Scanner sc = new Scanner(System.in);
 
+        int age = getAge(sc);
+        determineResult(age);
+    }
+
+    private static void determineResult(int age) {
+        String statement = age >=16 ? "You are old enough to legally drive.\n" : "You are not old enough to legally drive.\n";
+        System.out.printf("%s", statement);
+    }
+
+    private static int getAge(Scanner sc) {
         System.out.printf("What is your age? ");
         int age = sc.nextInt();
-        String statement = age>=16 ? "You are old enough to legally drive.\n" : "You are not old enough to legally drive.\n";
-        System.out.printf("%s", statement);
+        return age;
     }
 }

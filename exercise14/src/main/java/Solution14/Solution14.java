@@ -29,10 +29,8 @@ public class Solution14 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("What is the order amount? ");
-        double subtotal = sc.nextDouble();
-        System.out.print("What is the state? ");
-        String state = sc.next();
+        double subtotal = getSubtotal(sc);
+        String state = getString(sc);
 
         if(Objects.equals(state, "WI")){
             System.out.printf("The subtotal is $%.2f.\n", subtotal);
@@ -44,5 +42,15 @@ public class Solution14 {
         else{
             System.out.printf("The total is $%.2f.\n", subtotal);
         }
+    }
+
+    private static String getString(Scanner sc) {
+        System.out.print("What is the state? ");
+        return sc.next();
+    }
+
+    private static double getSubtotal(Scanner sc) {
+        System.out.print("What is the order amount? ");
+        return sc.nextDouble();
     }
 }

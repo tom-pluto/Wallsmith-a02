@@ -25,21 +25,24 @@ import static java.lang.Math.ceil;
 public class Solution09 {
     public static void main(String[] args) {
 
-        double roomLength;
-        double roomWidth;
         double roomSize;
         double resGallons;
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("What is the length of the room? ");
-        roomLength = sc.nextDouble();
-        System.out.printf("What is the width of the room? ");
-        roomWidth = sc.nextDouble();
+        double roomLength = getDimensions(sc, "What is the length of the room? ");
+        double roomWidth = getDimensions(sc, "What is the width of the room? ");
 
         roomSize = roomWidth*roomLength;
         resGallons = ceil(roomSize/350);
 
         System.out.printf("You will need to purchase %.0f gallons of paint to cover %.0f square feet.", resGallons, roomSize);
+    }
+
+    private static double getDimensions(Scanner sc, String s) {
+        double roomLength;
+        System.out.printf(s);
+        roomLength = sc.nextDouble();
+        return roomLength;
     }
 }

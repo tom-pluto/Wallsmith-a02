@@ -17,30 +17,31 @@ import java.util.Scanner;
 public class Solution10 {
     public static void main(String[] args) {
 
-        int item01, quantity01;
-        int item02, quantity02;
-        int item03, quantity03;
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the price of item 1: ");
-        item01 = sc.nextInt();
-        System.out.print("Enter the quantity of item 1: ");
-        quantity01 = sc.nextInt();
-        System.out.print("Enter the price of item 2: ");
-        item02 = sc.nextInt();
-        System.out.print("Enter the quantity of item 2: ");
-        quantity02 = sc.nextInt();
-        System.out.print("Enter the price of item 3: ");
-        item03 = sc.nextInt();
-        System.out.print("Enter the quantity of item 3: ");
-        quantity03 = sc.nextInt();
+        int item01 = getInput(sc, "Enter the price of item 1: ");
+        int quantity01 = getInput(sc, "Enter the quantity of item 1: ");
+        int item02 = getInput(sc, "Enter the price of item 2: ");
+        int quantity02 = getInput(sc, "Enter the quantity of item 2: ");
+        int item03 = getInput(sc, "Enter the price of item 3: ");
+        int quantity03 = getInput(sc, "Enter the quantity of item 3: ");
 
         double subtotal = (item01*quantity01)+(item02*quantity02)+(item03*quantity03);
         double tax = subtotal*0.055;
         double total = tax + subtotal;
 
-        System.out.printf("Subtotal: $%.2f\nTax: $%.2f\nTotal: $%.2f\n", subtotal, tax, total);
+        printResult(subtotal, tax, total);
 
+    }
+
+    private static void printResult(double subtotal, double tax, double total) {
+        System.out.printf("Subtotal: $%.2f\nTax: $%.2f\nTotal: $%.2f\n", subtotal, tax, total);
+    }
+
+    private static int getInput(Scanner sc, String s) {
+        int number;
+        System.out.print(s);
+        number = sc.nextInt();
+        return number;
     }
 }

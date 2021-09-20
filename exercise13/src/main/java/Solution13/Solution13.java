@@ -27,16 +27,33 @@ public class Solution13 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("What is the principle amount? ");
-        double principle = sc.nextDouble();
-        System.out.printf("What is the rate? ");
-        double rate = sc.nextDouble()/100;
-        System.out.printf("What is number of years? ");
-        double years = sc.nextDouble();
-        System.out.printf("What is the number of time the interest is compounded per year? ");
-        double interval = sc.nextDouble();
+        double principle = getPrinciple(sc);
+        double rate = getRate(sc);
+        double years = getYears(sc);
+        double interval = getInterval(sc);
 
         double result = principle * Math.pow(1+rate/interval, interval*years);
         System.out.printf("$%.2f invested at %.1f%% for %.0f years compounded %.0f times a year is $%.2f.", principle, rate*100, years, interval, result);
+    }
+
+    private static double getInterval(Scanner sc) {
+        System.out.printf("What is the number of time the interest is compounded per year? ");
+        double interval = sc.nextDouble();
+        return interval;
+    }
+
+    private static double getYears(Scanner sc) {
+        System.out.printf("What is number of years? ");
+        return sc.nextDouble();
+    }
+
+    private static double getRate(Scanner sc) {
+        System.out.printf("What is the rate? ");
+        return sc.nextDouble()/100;
+    }
+
+    private static double getPrinciple(Scanner sc) {
+        System.out.printf("What is the principle amount? ");
+        return sc.nextDouble();
     }
 }

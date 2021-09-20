@@ -23,13 +23,19 @@ public class Solution15 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("What is the password? ");
-        String userPass = sc.next();
+        String userPass = getString(sc);
+
         if(Objects.equals(userPass, "abc$123")){
             System.out.printf("Welcome!\n");
         }
         else{
             System.out.printf("I don't know you.\n");
         }
+    }
+
+    private static String getString(Scanner sc) {
+        System.out.print("What is the password? ");
+        String userPass = sc.next();
+        return userPass;
     }
 }
